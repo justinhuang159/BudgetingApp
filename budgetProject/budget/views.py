@@ -26,7 +26,7 @@ def project_detail(request, project_slug):
 
             category = get_object_or_404(Category, project=project, name=category_name)
 
-            Expense.object.create(
+            Expense.objects.create(
                 project=project,
                 title=title,
                 amount=amount,
