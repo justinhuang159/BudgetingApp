@@ -38,6 +38,14 @@ html {
   }
 }
 
+/* Project Add View */
+form ul li.category {
+  display: inline-block;
+  background-color: white;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
 /* Project Detail Expenses */
 .section-expenses button{
   padding: 0px 40px;
