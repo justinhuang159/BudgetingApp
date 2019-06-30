@@ -5,7 +5,7 @@ from django.utils.text import slugify
 class Project(models.Model):
     name = models.CharField(max_length=100)
     slug = models.SlugField(max_length=100, unique=True, blank=True)
-    budget = models.IntegerField()
+    budget = models.DecimalField(max_digits=8, decimal_places=2)
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
